@@ -44,7 +44,7 @@
 
     <div id="dotControls" class="gallery-controls{.section items.1}{.or} hidden{.end}">{.repeated section items}<span class="dot">&middot;</span>{.end}</div>
 
-    <div class="thumbnail-toggle">show thumbnails</div>
+    <div class="thumbnail-toggle">thumbnail view</div>
 
   </div>
 
