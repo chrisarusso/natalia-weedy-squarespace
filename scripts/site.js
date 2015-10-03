@@ -336,6 +336,8 @@ Y.use('node', 'squarespace-gallery-ng' ,'squarespace-image-loader', function(Y) 
 
         if(Y.Squarespace.Template.getTweakValue('gallery-style')) {
           galleryStyle = Y.Squarespace.Template.getTweakValue('gallery-style').toLowerCase();
+          var currentGallery =  Static.SQUARESPACE_CONTEXT.collection.title;
+          alert(currentGallery);
         }
 
         // slideshow gallery
