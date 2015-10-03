@@ -337,7 +337,7 @@ Y.use('node', 'squarespace-gallery-ng' ,'squarespace-image-loader', function(Y) 
         if(Y.Squarespace.Template.getTweakValue('gallery-style')) {
           galleryStyle = Y.Squarespace.Template.getTweakValue('gallery-style').toLowerCase();
           var currentGallery =  Static.SQUARESPACE_CONTEXT.collection.title;
-          if (currentGallery == 'work') {
+          if (currentGallery == 'Work') {
             alert('straigh workin');
           }
         }
