@@ -111,6 +111,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="scripts/jquery-1.11.3.min.js"><\/script>')</script>
 <squarespace:script src="site.js" combo="true"/>
+<squarespace:script src="right-click.js" combo="true"/>
 <squarespace:script src="custom.js" combo="true"/>
 
 {squarespace-footers}
