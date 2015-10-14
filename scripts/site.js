@@ -336,8 +336,8 @@ Y.use('node', 'squarespace-gallery-ng' ,'squarespace-image-loader', function(Y) 
 
         if(Y.Squarespace.Template.getTweakValue('gallery-style')) {
           galleryStyle = Y.Squarespace.Template.getTweakValue('gallery-style').toLowerCase();
-          var currentGallery =  Static.SQUARESPACE_CONTEXT.collection.title;
-          if (currentGallery == 'Work' || currentGallery == 'Icescapes' || currentGallery == 'Body') {
+          var cG =  Static.SQUARESPACE_CONTEXT.collection.title;
+          if (cG == 'Work' || cG == 'Icescapes' || cG == 'Body' || cG == 'Clients') {
             galleryStyle = 'fit';
           }
         }
