@@ -113,6 +113,7 @@
 <squarespace:script src="site.js" combo="true"/>
 <squarespace:script src="right-click.js" combo="true"/>
 <squarespace:script src="custom.js" combo="true"/>
+<squarespace:script src="resize.js" combo="true"/>
 
 {squarespace-footers}
 </body>
