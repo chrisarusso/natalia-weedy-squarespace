@@ -10,7 +10,8 @@ var galleries = [
   "Faces",
   "Work",
   "Body",
-  "Icescapes"
+  "Icescapes",
+  "Tarot"
 ];
 
 var arrayLength = galleries.length;
