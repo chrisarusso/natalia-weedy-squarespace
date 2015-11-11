@@ -9,9 +9,9 @@ var galleries = [
   "Editorial",
   "Faces",
   "Work",
+  "Tarot",
   "Body",
-  "Icescapes",
-  "Tarot"
+  "Icescapes"
 ];
 
 var arrayLength = galleries.length;
