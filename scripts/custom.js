@@ -39,7 +39,7 @@ for (var i = 0; i < arrayLength; i++) {
 }
 
 // Not collection-56a7b1b176d99c82e7d277a1 on tarot card set page
-$(".overlay-controls.right-control:not('#collection-56a7b1b176d99c82e7d277a1')").on('click', function(event){
+$(":not('#collection-56a7b1b176d99c82e7d277a1') .overlay-controls.right-control").on('click', function(event){
   // This prevents the image from the next image from loading
   var activeSlideID = $('.sqs-active-slide').attr('data-slide-id');
   if (activeSlideID == lastSlideID) {
