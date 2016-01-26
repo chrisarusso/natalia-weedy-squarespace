@@ -50,8 +50,7 @@ $('.overlay-controls.right-control').not('#collection-56a7b1b176d99c82e7d277a1 .
   return false;
 });
 
-$('.overlay-controls.left-control').not('#collection-56a7b1b176d99c82e7d277a1 .overlay-controls.right-control').on('click', function(event){
-
+$('.overlay-controls.left-control').not('#collection-56a7b1b176d99c82e7d277a1 .overlay-controls.left-control').on('click', function(event){
     // This prevents the image from the next image from loading
     var activeSlideID = $('.sqs-active-slide').attr('data-slide-id');
     if (activeSlideID == firstSlideID && previousGallery != null) {
