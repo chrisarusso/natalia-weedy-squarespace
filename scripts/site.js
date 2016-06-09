@@ -337,7 +337,7 @@ Y.use('node', 'squarespace-gallery-ng' ,'squarespace-image-loader', function(Y) 
         if(Y.Squarespace.Template.getTweakValue('gallery-style')) {
           galleryStyle = Y.Squarespace.Template.getTweakValue('gallery-style').toLowerCase();
           var cG =  Static.SQUARESPACE_CONTEXT.collection.title;
-          if (cG == 'Work' || cG == 'Icescapes' || cG == 'Body' || cG == 'Clients' || cG == 'Tarot' || cG == 'Tarot Card Set') {
+          if (cG == 'Work' || cG == 'Icescapes' || cG == 'Body' || cG == 'Clients' || cG == 'Tarot' || cG == 'Tarot Card Set' || cG == 'Corporate') {
             galleryStyle = 'fit';
           }
         }
