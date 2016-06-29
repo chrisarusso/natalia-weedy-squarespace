@@ -8,6 +8,7 @@ var galleries = [
   "Enthusiasts",
   "Editorial",
   "Faces",
+  "Corporate",
   "Work",
   "Tarot",
   "Body",
