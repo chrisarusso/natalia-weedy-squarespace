@@ -39,11 +39,17 @@ for (var i = 0; i < arrayLength; i++) {
   }
 }
 
+// For galleries not in the navigation we don't want the left OR right to leave the gallery since they're on a hidden
+// internal page of sorts
+var hiddenGalleries = [
+  "A Woman's Place"
+];
+
 // Not collection-56a7b1b176d99c82e7d277a1 on tarot card set page
 $('.overlay-controls.right-control').not('#collection-56a7b1b176d99c82e7d277a1 .overlay-controls.right-control').on('click', function(event){
   // This prevents the image from the next image from loading
   var activeSlideID = $('.sqs-active-slide').attr('data-slide-id');
-  if (activeSlideID == lastSlideID) {
+  if (activeSlideID == lastSlideID && hiddenGalleries.indexOf(currentGallery) == -1) {
     event.stopImmediatePropagation();
     var domain = location.protocol + "//" + location.host;
     window.location.href = domain + "/" + nextGallery.toLowerCase();
@@ -54,11 +60,12 @@ $('.overlay-controls.right-control').not('#collection-56a7b1b176d99c82e7d277a1 .
 $('.overlay-controls.left-control').not('#collection-56a7b1b176d99c82e7d277a1 .overlay-controls.left-control').on('click', function(event){
     // This prevents the image from the next image from loading
     var activeSlideID = $('.sqs-active-slide').attr('data-slide-id');
-    if (activeSlideID == firstSlideID && previousGallery != null) {
+    if (activeSlideID == firstSlideID && previousGallery != null && hiddenGalleries.indexOf(currentGallery) == -1) {
       event.stopImmediatePropagation();
       var domain = location.protocol + "//" + location.host;
       window.location.replace(domain + "/" + previousGallery.toLowerCase());
     }
+    return false;
 });
 
 
